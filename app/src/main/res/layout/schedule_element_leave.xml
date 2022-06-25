@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.shiftboard.schedulepro.ui.schedule.DayTagView
+        android:id="@+id/day_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/content_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="@color/approved_leave">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/color_bar"
+                android:layout_width="12dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/type"
+                style="@style/Text.Medium16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/half_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:clickable="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/row2_flow"
+                app:layout_constraintStart_toEndOf="@+id/color_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="GYD" />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/row2_flow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/half_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/standard_margin"
+                app:constraint_referenced_ids="time,status"
+                app:layout_constraintBottom_toTopOf="@id/comment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/color_bar"
+                app:layout_constraintTop_toBottomOf="@+id/type"
+                app:flow_wrapMode="chain"
+                app:flow_horizontalBias="0"
+                app:flow_horizontalStyle="spread_inside"
+                app:flow_horizontalGap="@dimen/half_margin"
+                app:layout_goneMarginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/Text.Regular14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textColor="@color/white"
+                tools:text="12:00 AM - 12:00 AM" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/Text.Italics14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textColor="@color/white"
+                tools:text="Accepted" />
+
+            <Space
+                android:id="@+id/comment_space"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/half_margin"
+                android:layout_marginEnd="@dimen/standard_margin"
+                app:layout_constraintBottom_toBottomOf="@+id/bottom_barrier"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/color_bar"
+                app:layout_constraintTop_toBottomOf="@+id/row2_flow" />
+
+            <ImageView
+                android:id="@+id/calendar_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="@dimen/standard_margin"
+                android:clickable="false"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_time_off"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/type"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/comment_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="@dimen/half_margin"
+                android:clickable="false"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_feedback"
+                app:layout_constraintStart_toStartOf="@+id/comment_space"
+                app:layout_constraintTop_toTopOf="@+id/comment_space"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/comment"
+                style="@style/Text.Regular12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/comment_space"
+                app:layout_constraintStart_toEndOf="@+id/comment_icon"
+                app:layout_constraintTop_toTopOf="@+id/comment_space"
+                tools:text="Some comment goes here if it needs to it can wrap up to 3 lines before I just truncate it." />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/bottom_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="comment,comment_icon" />
+
+            <Space
+                android:id="@+id/bottom_spacing"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/small_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comment_space" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

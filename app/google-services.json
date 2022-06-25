@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "232311719009",
+    "firebase_url": "https://schedulepro-af9b1.firebaseio.com",
+    "project_id": "schedulepro-af9b1",
+    "storage_bucket": "schedulepro-af9b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232311719009:android:8a1593d891c4754d819620",
+        "android_client_info": {
+          "package_name": "com.shiftboard.schedulepro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232311719009-hiqq13mnq55bqpclqb8qfq90krir36at.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shiftboard.schedulepro",
+            "certificate_hash": "77bc48886682ecc6d884a380843d06b69e0d2ab5"
+          }
+        },
+        {
+          "client_id": "232311719009-r6sgogq3rh3r8arjkqtjq6tlv4nt1rb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGzKySAjW4qssimQmh0M1ztrYDSMcg95A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232311719009-r6sgogq3rh3r8arjkqtjq6tlv4nt1rb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232311719009:android:eb14952d835e8f2c819620",
+        "android_client_info": {
+          "package_name": "com.shiftboard.schedulepro.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232311719009-qaa3cvqdcldnh6u4msb4t1jsc80om0jb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shiftboard.schedulepro.dev",
+            "certificate_hash": "77bc48886682ecc6d884a380843d06b69e0d2ab5"
+          }
+        },
+        {
+          "client_id": "232311719009-r6sgogq3rh3r8arjkqtjq6tlv4nt1rb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGzKySAjW4qssimQmh0M1ztrYDSMcg95A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232311719009-r6sgogq3rh3r8arjkqtjq6tlv4nt1rb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232311719009:android:9bcaaf08e370915b819620",
+        "android_client_info": {
+          "package_name": "com.shiftboard.schedulepro.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232311719009-oa0jhqn4qdtu4so9jdo09c6ls68hi9q0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shiftboard.schedulepro.qa",
+            "certificate_hash": "77bc48886682ecc6d884a380843d06b69e0d2ab5"
+          }
+        },
+        {
+          "client_id": "232311719009-r6sgogq3rh3r8arjkqtjq6tlv4nt1rb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGzKySAjW4qssimQmh0M1ztrYDSMcg95A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232311719009-r6sgogq3rh3r8arjkqtjq6tlv4nt1rb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

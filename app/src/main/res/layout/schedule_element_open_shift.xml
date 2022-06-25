@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/content_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/color_bar"
+                android:layout_width="12dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@color/alert_red" />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/row1_flow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:constraint_referenced_ids="shift,time"
+                app:flow_horizontalBias="0"
+                app:flow_horizontalGap="@dimen/standard_margin"
+                app:flow_horizontalStyle="packed"
+                app:flow_wrapMode="chain"
+                app:layout_constraintBottom_toTopOf="@+id/location"
+                app:layout_constraintEnd_toStartOf="@+id/overtime_icon"
+                app:layout_constraintStart_toEndOf="@+id/color_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/shift"
+                style="@style/Text.Medium16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                tools:text="GDP" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/Text.Regular16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                tools:text="WED 7pm - TUE 7am" />
+
+            <ImageView
+                android:id="@+id/overtime_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/half_margin"
+                android:src="@drawable/ic_bidcheck"
+                android:clickable="false"
+                app:tint="@color/black"
+                android:contentDescription="@null"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <TextView
+                android:id="@+id/location"
+                style="@style/Text.Regular14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/half_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:clickable="false"
+                app:layout_constraintBottom_toTopOf="@id/position"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/color_bar"
+                app:layout_constraintTop_toBottomOf="@+id/row1_flow"
+                app:layout_goneMarginBottom="8dp"
+                tools:text="LN2" />
+
+            <TextView
+                android:id="@+id/position"
+                style="@style/Text.Regular14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/half_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="8dp"
+                android:clickable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/color_bar"
+                app:layout_constraintTop_toBottomOf="@+id/location"
+                app:layout_goneMarginBottom="8dp"
+                tools:text="LN2" />
+
+            <TextView
+                android:id="@+id/bid_status"
+                style="@style/Text.Regular14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.8"
+                android:clickable="false"
+                android:text="@string/pending"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/location"
+                app:layout_goneMarginBottom="8dp"
+                android:textStyle="italic"
+                tools:text="LN2" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/bottom_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                tools:layout_editor_absoluteY="116dp" />
+
+            <Space
+                android:id="@+id/bottom_spacing"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/half_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

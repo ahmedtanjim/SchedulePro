@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/form_start_padding"
+    android:paddingTop="@dimen/form_top_padding"
+    android:paddingEnd="@dimen/form_end_padding"
+    android:paddingBottom="@dimen/form_bottom_padding">
+
+    <ImageView
+        android:id="@+id/form_icon"
+        android:layout_width="@dimen/form_icon_size"
+        android:layout_height="@dimen/form_icon_size"
+        android:layout_gravity="top"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@null"
+        android:padding="@dimen/form_icon_padding"
+        app:tint="?attr/colorControlNormal"
+        tools:src="@drawable/ic_schedule" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:helperTextEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

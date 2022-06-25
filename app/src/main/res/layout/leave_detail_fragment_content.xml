@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shiftboard.schedulepro.ui.DetailsHeader
+        android:id="@+id/details_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sft_background_color="@color/approved_leave"
+        app:sft_light_text="true"
+        app:sft_draw_border="false" />
+
+    <!--    Helps position the icon flag but doesn't take up space or draw  -->
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_header" />
+
+    <!--    Helps position the icon flag but doesn't take up space or draw  -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/icon_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spacer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearance="@style/DetailFlagShapeAppearance">
+
+        <LinearLayout
+            android:id="@+id/icon_flag_container"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp">
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/action_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.shiftboard.schedulepro.ui.lineitem.SingleLineItemWidget
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_schedule" />
+
+            <com.shiftboard.schedulepro.ui.lineitem.SingleLineItemWidget
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_clock" />
+
+            <include android:id="@+id/hour_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/line_item_icon_spacing"
+                layout="@layout/hour_summary_include" />
+
+            <com.shiftboard.schedulepro.ui.lineitem.SingleLineItemWidget
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_location" />
+
+            <com.shiftboard.schedulepro.ui.lineitem.SingleLineItemWidget
+                android:id="@+id/position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_position" />
+
+            <include layout="@layout/include_comment_block"
+                android:id="@+id/comment"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.shiftboard.schedulepro.ui.LeaveRequestHeader
+                android:id="@+id/leave_request_header"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.shiftboard.schedulepro.ui.lineitem.SingleLineItemWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:visibility="gone"
+                android:icon="@drawable/ic_time_off" />
+
+            <com.shiftboard.schedulepro.ui.lineitem.SingleLineItemWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/request_date"
+                android:visibility="gone"
+                android:icon="@drawable/ic_schedule" />
+
+            <com.shiftboard.schedulepro.ui.lineitem.SingleLineItemWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/request_time"
+                android:visibility="gone"
+                android:icon="@drawable/ic_clock" />
+
+            <include android:id="@+id/request_hour_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/line_item_icon_spacing"
+                android:layout_marginBottom="8dp"
+                layout="@layout/hour_summary_include" />
+
+            <com.shiftboard.schedulepro.ui.lineitem.SingleLineItemWidget
+                android:id="@+id/request_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:icon="@drawable/ic_people" />
+
+            <include layout="@layout/include_comment_block"
+                android:id="@+id/request_comment"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/very_light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/action_container" />
+
+    <HorizontalScrollView
+        android:id="@+id/action_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_margin"
+                style="@style/ChipTheme"
+                app:chipIcon="@drawable/ic_time_off"
+                android:text="@string/delete"
+                android:visibility="gone"
+                app:iconStartPadding="4dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/request_cancellation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/standard_margin"
+                style="@style/ChipTheme"
+                app:chipIcon="@drawable/ic_time_off"
+                android:text="@string/request_cancellation"
+                android:visibility="gone"
+                app:iconStartPadding="4dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

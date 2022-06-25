@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="trade">Échanger</string>
+    <string name="title_activity_main_compose">MainComposeActivity</string>
+    <string name="date_picker_dialog_title">Sélectionnez la date de début</string>
+
+
+
+    <string name="apply">Appliquer</string>
+    <string name="manage_unavailability">Gérer l\'indisponibilitéy</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="crete_availability">Créer une disponibilité</string>
+    <string name="no_tradable_shifts">Vous n\'avez pas d\'équipes échangeables pour la plage de dates sélectionnée</string>
+    <string name="daily">du quotidien</string>
+    <string name="employees">Des employés</string>
+    <string name="all">Tout</string>
+    <string name="change">Changer</string>
+    <string name="locations">Emplacements</string>
+    <string name="positions">Postes</string>
+    <string name="shift_times">Temps de travail</string>
+    <string name="leave_types">Types de congé</string>
+    <string name="teams">Équipes</string>
+    <string name="update_filters">Mettre à jour les filtres</string>
+    <string name="employee_name">Nom de l\'employé</string>
+    <string name="close">proche</string>
+    <string name="recurrence">Récurrence</string>
+    <string name="unavailabilities">Indisponibilités</string>
+    <string name="existing_unavailabilities_error">Vous n\'avez pas d\'indisponibilités existantes</string>
+    <string name="select_the_ending_date">Sélectionnez la date de fin</string>
+    <string name="delete">Effacer</string>
+    <string name="create_unavailability">Créer une indisponibilité</string> b
+    <string name="subject">Objet</string>
+    <string name="all_day">Toute la journée</string>
+    <string name="start_time">Heure de début</string>
+    <string name="end_time">Heure de fin</string>
+    <string name="every_space">Tous </string>
+    <string name="days"> journée</string>
+    <string name="reoccour_every">Répéter toutes les</string>
+    <string name="weeks_on">semaine(S) sur:</string>
+    <string name="day">Jour</string>
+    <string name="of_every">de chaque</string>
+    <string name="months">mois</string>
+    <string name="every">Tous</string>
+    <string name="on_day">le jour</string>
+    <string name="patter_of_recurrence">    Modèle de récurrence    </string>
+    <string name="range_of_recurrence">    Plage de récurrence    </string>
+    <string name="cancel">Annuler</string>
+    <string name="submit">Soumettre</string>
+    <string name="january">Janvier</string>
+    <string name="february">Février</string>
+    <string name="march">Mars</string>
+    <string name="april">Avril</string>
+    <string name="may">Peut</string>
+    <string name="june">Juin</string>
+    <string name="july">Juillet</string>
+    <string name="august">Août</string>
+    <string name="september">Septembre</string>
+    <string name="october">Octobre</string>
+    <string name="november">Novembre</string>
+    <string name="december">Décembre</string>
+    <string name="week">La semaine</string>
+    <string name="month">Mois</string>
+    <string name="year">An</string>
+    <string name="repeat_until">Répète jusqu\'à</string>
+    <string name="weekly">Hebdomadaire</string>
+    <string name="space_of_space">" de "</string>
+    <string name="there_are_no_unavailabilities_curreently">Il n\'y a pas de disponibilités actuellement</string>
+    <string name="create_new">Créer un nouveau</string>
+</resources>

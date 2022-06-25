@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/month"
+        motion:constraintSetStart="@+id/week"
+        motion:duration="500"
+        motion:motionInterpolator="linear">
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:nestedScrollFlags="disableScroll"
+            motion:touchAnchorId="@+id/handle_space"
+            motion:touchAnchorSide="top" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/month">
+        <Constraint
+            android:id="@+id/calendar_widget"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:elevation="4dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/header_space"
+            motion:layout_constraintBottom_toBottomOf="@+id/month_calendar_space" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/week">
+        <Constraint
+            android:id="@+id/calendar_widget"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:elevation="4dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/header_space"
+            motion:layout_constraintBottom_toBottomOf="@+id/week_calendar_space" />
+    </ConstraintSet>
+</MotionScene>

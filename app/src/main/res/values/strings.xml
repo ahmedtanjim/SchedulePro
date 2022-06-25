@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name" translatable="false">SchedulePro</string>
+    <!--    This could be done with flavors, but they tend to get messy  -->
+    <string name="app_name_qa" translatable="false">SchedulePro-Test</string>
+    <string name="app_name_dev" translatable="false">SchedulePro-DEV</string>
+    <string name="trade">Trade</string>
+    <string name="title_activity_main_compose">MainComposeActivity</string>
+    <string name="date_picker_dialog_title">Select the starting date</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="manage_unavailability">Manage Unavailability</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="crete_availability">Create Availability</string>
+    <string name="no_tradable_shifts">You have no tradable shifts for the selected date range</string>
+    <string name="daily">Daily</string>
+    <string name="employees">Employees</string>
+    <string name="all">All</string>
+    <string name="change">Change</string>
+    <string name="locations">Locations</string>
+    <string name="positions">Positions</string>
+    <string name="shift_times">Shift Times</string>
+    <string name="leave_types">Leave Types</string>
+    <string name="teams">Teams</string>
+    <string name="update_filters">Update Filters</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="close">Close</string>
+    <string name="recurrence">Recurrence</string>
+    <string name="unavailabilities">Unavailabilities</string>
+    <string name="existing_unavailabilities_error">You don\'t have existing unavailabilities</string>
+    <string name="select_the_ending_date">Select the ending date</string>
+    <string name="delete">Delete</string>
+    <string name="create_unavailability">Create Unavailability</string>
+    <string name="subject">Subject</string>
+    <string name="all_day">All Day</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="every_space">Every </string>
+    <string name="days"> day(s)</string>
+    <string name="reoccour_every">Reoccur every</string>
+    <string name="weeks_on">week(S) on:</string>
+    <string name="day">Day</string>
+    <string name="of_every">of Every</string>
+    <string name="months">month(s)</string>
+    <string name="every">Every</string>
+    <string name="on_day">on day</string>
+    <string name="patter_of_recurrence">    Pattern of Recurrence    </string>
+    <string name="range_of_recurrence">    Range of Recurrence    </string>
+    <string name="submit">Submit</string>
+
+
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="repeat_until">Repeat until</string>
+    <string name="weekly">Weekly</string>
+    <string name="space_of_space"> of </string>
+    <string name="th" translatable="false">th</string>
+    <string name="st" translatable="false">st</string>
+    <string name="nd" translatable="false">nd</string>
+    <string name="rd" translatable="false">rd</string>
+    <string name="there_are_no_unavailabilities_curreently">There are no unavailabilities currently</string>
+    <string name="create_new">Create New</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="@dimen/form_start_padding"
+    android:layout_marginEnd="@dimen/form_start_padding"
+    android:layout_marginTop="@dimen/form_top_padding"
+    android:layout_marginBottom="@dimen/form_bottom_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Text.Regular18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/header_barrier"
+        tools:text="Out of Unit Firewatch" />
+
+    <TextView
+        android:id="@+id/select_action"
+        style="@style/Text.Regular16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select"
+        app:layout_constraintBottom_toTopOf="@+id/header_barrier"
+        android:textColor="@color/chip_text"
+        android:paddingStart="@dimen/half_margin"
+        android:paddingEnd="@dimen/half_margin"
+        android:paddingBottom="@dimen/half_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chip_group"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/half_margin"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_barrier">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/header_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="title,select_action"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

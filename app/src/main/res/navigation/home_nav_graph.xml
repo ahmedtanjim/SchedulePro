@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/schedule">
+
+    <action
+        android:id="@+id/action_global_notification"
+        app:destination="@id/notifications"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/home_nav_graph" />
+    <fragment
+        android:id="@+id/schedule"
+        android:name="com.shiftboard.schedulepro.content.schedule.ui.ScheduleFragment"
+        android:label="@string/schedule">
+        <action
+            android:id="@+id/action_schedule_to_leaveDetailFragment"
+            app:destination="@id/leaveDetailFragment" />
+        <action
+            android:id="@+id/action_schedule_to_shiftDetailFragment"
+            app:destination="@id/shiftDetailFragment" />
+        <action
+            android:id="@+id/action_schedule_to_requestDetailFragment"
+            app:destination="@id/requestDetailFragment" />
+        <argument
+            android:name="startDate"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_schedule_to_projectedShiftDetailsFragment"
+            app:destination="@id/projectedShiftDetailsFragment" />
+        <action
+            android:id="@+id/action_schedule_to_projectedLeaveDetailFragment"
+            app:destination="@id/projectedLeaveDetailFragment" />
+        <action
+            android:id="@+id/action_schedule_to_tradeFragment"
+            app:destination="@id/tradeFragment" />
+        <action
+            android:id="@+id/action_schedule_to_groupFragment"
+            app:destination="@id/group" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.shiftboard.schedulepro.content.notifications.ui.NotificationsFragment"
+        android:label="@string/notifications" >
+        <argument
+            android:name="selected_notification_id"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.shiftboard.schedulepro.content.profile.ProfileFragment"
+        android:label="@string/profile" />
+    <fragment
+        android:id="@+id/leaveDetailFragment"
+        android:name="com.shiftboard.schedulepro.content.details.leave.LeaveDetailFragment"
+        android:label="LeaveDetailDialog">
+        <argument
+            android:name="leaveId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestDetailFragment"
+        android:name="com.shiftboard.schedulepro.content.details.request.RequestDetailFragment"
+        android:label="RequestDetailDialog">
+        <argument
+            android:name="requestId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/shiftDetailFragment"
+        android:name="com.shiftboard.schedulepro.content.details.shift.ShiftDetailFragment"
+        android:label="ShiftDetailDialog">
+        <argument android:name="shiftId" />
+        <action
+            android:id="@+id/action_shiftDetailFragment_to_tradeFragment"
+            app:destination="@id/tradeFragment"
+            app:enterAnim="@anim/popup_enter"
+            app:exitAnim="@anim/popup_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tradeFragment"
+        android:name="com.shiftboard.schedulepro.content.trade.TradeFragment"
+        android:label="TradeDialog">
+        <argument android:name="tradeId" />
+        <argument android:name="shiftId" />
+        <argument android:name="fromGroup"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/group"
+        android:name="com.shiftboard.schedulepro.content.group.GroupFragment"
+        android:label="GroupDialog">
+        <action
+            android:id="@+id/action_group_to_tradeFragment"
+            app:destination="@id/tradeFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_schedule"
+        app:destination="@id/schedule"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/home_nav_graph" />
+    <fragment
+        android:id="@+id/projectedShiftDetailsFragment"
+        android:name="com.shiftboard.schedulepro.content.details.projected.shift.ProjectedShiftDetailsFragment"
+        android:label="ProjectedShiftDetailsFragment" >
+        <argument
+            android:name="shitId"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectedLeaveDetailFragment"
+        android:name="com.shiftboard.schedulepro.content.details.projected.leave.ProjectedLeaveDetailFragment"
+        android:label="ProjectedLeaveDetailFragment" >
+        <argument android:name="leaveId"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+</navigation>

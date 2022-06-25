@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string translatable="false" name="copyright">©2022 SchedulePro</string>
+    <string translatable="false" name="terms_url">https://www.scheduleproweb.com/Legal/TermsOfService</string>
+    <string translatable="false" name="privacy_url">https://www.shiftboard.com/privacy/</string>
+    <string translatable="false" name="feedback_subject_line">SchedulePro Feedback</string>
+    <string translatable="false" name="schedule_range_format">%1$s - %2$s</string>
+    <string translatable="false" name="bullet_point">●</string>
+    <string translatable="false" name="date_range_span_separator">-</string>
+    <string translatable="false" name="overtime_multiplier_format">x %s</string>
+    <string translatable="false" name="bulk_messaging">BulkMessaging</string>
+
+    <string name="feedback_chooser_title">Choose Email App</string>
+
+    <string name="from">From :</string>
+
+    <string name="version_identifier" translatable="false">Version: %s</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="shift_details">Shift Details</string>
+    <string name="trade_details" translatable="false">Trade Details</string>
+    <string name="leave_details">Leave Details</string>
+    <string name="notifications">Notifications</string>
+    <string name="all_day">All Day</string>
+
+    <string name="login">Login</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="no_selection">No Selection</string>
+    <string name="email_address">Email Address</string>
+
+    <string name="schedule">Schedule</string>
+    <string name="group_schedule">Group Schedule</string>
+    <string name="loading">Loading…</string>
+    <string name="filters">Filters</string>
+    <string name="title_auth">Auth</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="hours_paid">Hours Paid</string>
+    <string name="regular_overtime_hours">Regular Overtime Hours</string>
+    <string name="overtime_hours">Overtime Hours</string>
+    <string name="overtime_multiplier">Overtime Multiplier</string>
+    <string name="comments">Comments</string>
+
+    <string name="position">Position</string>
+    <string name="location">Location</string>
+
+    <string name="leave_request">Leave Request</string>
+    <string name="manager_comment">Manager:</string>
+    <string name="employee_comment">Employee:</string>
+
+    <string name="hour_format">%s hrs</string>
+    <string name="overtime_format">%s ot</string>
+
+    <string name="delete">Delete</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="remove_signup">Remove Sign Up</string>
+    <string name="signup_shift_header">Volunteer For Shift</string>
+    <string name="retry">Retry</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="request_leave">Request Leave</string>
+
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="type">Type</string>
+    <string name="comment">Comment</string>
+    <string name="required">Required</string>
+    <string name="full_name">%1$s %2$s</string>
+
+    <string name="sign_out">Sign Out</string>
+    <string name="leave_feedback">Leave Feedback</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="third_party_libraries">Third Party Libraries</string>
+
+    <string name="request_cancellation">Cancel</string>
+    <string name="request_delete_success">Your leave request has been deleted.</string>
+
+    <string name="error_calendar_summary">Error pulling calendar summary.</string>
+
+    <string name="leave_request_status_pending">Pending</string>
+    <string name="leave_request_status_accepted">Accepted</string>
+    <string name="leave_request_status_accepted_pending_edit">Pending Edit</string>
+    <string name="leave_request_status_accepted_cancellation_requested">Cancellation Requested</string>
+    <string name="leave_request_status_declined">Declined</string>
+    <string name="leave_request_status_revoked">Revoked</string>
+    <string name="leave_request_status_cancelled">Cancelled</string>
+
+    <string name="leave_request_submitted">Your leave request has been submitted.</string>
+    <string name="leave_request_error">Unable to submit leave request.</string>
+    <string name="mobile_access_disabled_title">Mobile Access Disabled</string>
+    <string name="mobile_access_disabled">Mobile access has not been enabled for this organization.</string>
+    <string name="select_leave_type">Select Type</string>
+    <string name="select">Select</string>
+    <string name="next">Next</string>
+
+    <string name="leave_updates_channel">Leave Updates</string>
+    <string name="leave_updates_channel_description">Get notified when changes happen to your leaves and leave requests.</string>
+
+    <string name="schedule_updates_channel">Schedule Updates</string>
+    <string name="schedule_updates_channel_description">Get notified when your schedule has been posted.</string>
+
+    <string name="shift_updates_channel">Shift Updates</string>
+    <string name="shift_updates_channel_description">Get notified when changes happen to your shifts.</string>
+
+    <string name="due_timestamp">Due: %s</string>
+    <string name="submitted_timestamp">Submitted: %s</string>
+    <string name="projected_title">%s (Projected)</string>
+
+    <string name="signup_count">Sign Up (%s)</string>
+
+    <string name="signup_saved">Your sign up was saved for %s.</string>
+
+    <string name="leave_request_notification_title">Leave Request</string>
+    <string name="schedule_notification_title">Schedule</string>
+
+
+    <string name="notification_date_range_join">to</string>
+    <string name="notification_date_list_join_final">and</string>
+    <string name="notification_date_list_join">,</string>
+
+    <string name="notification_leave_canceled_true">approved</string>
+    <string name="notification_leave_canceled_false">denied</string>
+
+    <string name="notification_leave_amendment_true">approved</string>
+    <string name="notification_leave_amendment_false">denied</string>
+
+    <string name="leave_request_status_updated">Your %1$s leave request for %2$s has been %3$s by %4$s.</string>
+
+    <string name="leave_status_map_accepted">accepted</string>
+    <string name="leave_status_map_declined">declined</string>
+    <string name="leave_status_map_revoked_after_approval">revoked</string>
+    <string name="leave_status_map_cancelled_after_approval">cancelled</string>
+
+    <string name="leave_status_map_pending">changed to pending</string>
+    <string name="leave_status_map_accepted_pending_edit">changed to pending edit</string>
+    <string name="leave_status_map_accepted_cancellation_requested">changed to cancellation requested</string>
+
+
+    <string name="example_message_body">This is an example message: %1$s %2$s %3$s</string>
+    <string name="leave_request_cancellation_request_status_updated">Your request for cancellation on %1$s for %2$s has been %3$s by %4$s.</string>
+    <string name="leave_request_amendment_request_status_updated">Your request to update %1$s for %2$s has been %3$s by %4$s.</string>
+    <string name="leave_request_details_updated">Your %1$s leave request for %2$s has been updated by %3$s.</string>
+    <string name="schedule_published">A new schedule has been published for %1$s.</string>
+    <string name="shift_edited">Your schedule on %1$s has been updated by %2$s.</string>
+    <string name="shift_assigned_or_unassigned_no_shift_id">Your schedule has been updated on %1$s by %2$s.</string>
+    <string name="shift_assigned">You have been assigned to %1$s on %2$s by %3$s.</string>
+    <string name="shift_unassigned">You have been unassigned from a shift on %1$s by %2$s.</string>
+    <string name="bulk_shifts_edited">Your schedule has been updated by %1$s for the following dates: %2$s.</string>
+    <string name="bulk_shifts_assigned_or_unassigned">Your schedule has been updated by %1$s for the following dates: %2$s.</string>
+    <string name="new_message">New Message</string>
+    <string name="new_message_description">You have a new message</string>
+    <string name="open_shift">Open Shifts</string>
+    <string name="open_shift_published">New shifts has been posted to the bid system by %1$s on %2$s.</string>
+    <string name="open_shift_request_status_updated">Your bid on open shift for %1$s/%2$s has been %3$s by %4$s</string>
+    <string name="open_shift_success_message">Your Open Shift Request Has Been Submitted</string>
+    <string name="open_shift_request_failure">Failed to Submit Open Shift Request</string>
+    <string name="open_shift_cancel_success">Open Shift Request Has Been Cancelled</string>
+    <string name="pending">Pending</string>
+    <string name="take">Take</string>
+    <string name="bid">Bid</string>
+    <string name="rejected">Rejected</string>
+    <string name="bidders">%d Bidder(s)</string>
+    <string name="turndown">Turndown</string>
+    <string name="cancel_turndown">Cancel Turndown</string>
+    <string name="turndown_no_takers_body">No eligible employees could be assigned to your posted shift, %1$s, %2$s on %3$s is still assigned to you.</string>
+    <string name="turndown_reassigned_body">Your posted shift %1$s, %2$s on %3$s has been successfully reassigned.</string>
+    <string name="trade_requested_body">%1$s wants to trade your shift on %2$s for his shift on %3$s.</string>
+    <string name="trade_request_updated_body">Your trade on %1$s, with %2$s is now %3$s.</string>
+    <string name="submit_turndown_cancel_string">SubmitTurndownCancel</string>
+    <string name="submit_turndown_request_string">SubmitTurndownRequest</string>
+    <string name="submit_trade_request_string">SubmitTradeRequest</string>
+    <string name="trades">Trade Request</string>
+    <string name="trade_submitted">Trade Submitted</string>
+    <string name="trade_cancelled">Trade Cancelled</string>
+    <string name="trade_accepted">Trade Accepted</string>
+    <string name="trade_declined">Trade Declined</string>
+    <string name="submit_anyways">Submit Anyways</string>
+    <string name="violations_detected">Violations Detected</string>
+    <string name="critical_violations">Critical Violations</string>
+
+
+</resources>

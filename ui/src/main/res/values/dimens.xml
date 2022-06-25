@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="form_icon_size">48dp</dimen>
+    <dimen name="form_icon_padding">12dp</dimen>
+    <dimen name="form_content_inset">8dp</dimen>
+    <dimen name="form_start_padding">12dp</dimen>
+    <dimen name="form_end_padding">12dp</dimen>
+    <dimen name="form_top_padding">8dp</dimen>
+    <dimen name="form_bottom_padding">8dp</dimen>
+
+    <dimen name="schedule_header_height">72dp</dimen>
+
+    <dimen name="schedule_icon_spacing">1dp</dimen>
+    <dimen name="schedule_icon_padding">2dp</dimen>
+
+<!--This is the space between the edge of the screen and the content when there is no icon in a line item-->
+<!--Its equal to 2 x the standard margin of 16dp plus the width of an icon 40dp-->
+    <dimen name="line_item_icon_spacing">72dp</dimen>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feedback_chooser_title">Sélectionner adresse courriel</string>
+
+    <string name="version_identifier">Version: %s</string>
+
+    <string name="dashboard">Tableau de bord</string>
+
+    <string name="from">Descend :</string>
+
+    <string name="profile">Profil</string>
+    <string name="about">A propos</string>
+    <string name="shift_details">Détails du quart</string>
+    <string name="leave_details">Détail de la demande d\'absence</string>
+    <string name="notifications">Avis</string>
+    <string name="all_day">Journée entière</string>
+
+    <string name="login">Connexion</string>
+    <string name="error">Erreur</string>
+    <string name="ok">OK</string>
+    <string name="no_selection">Sélectionnez une option</string>
+    <string name="email_address">Adresse Courriel</string>
+
+    <string name="schedule">Horaire</string>
+    <string name="group_schedule">Horaire de groupe</string>
+    <string name="loading">Chargement…</string>
+    <string name="filters">Filtres</string>
+    <string name="title_auth">Autorisations</string>
+    <string name="date">Date</string>
+    <string name="time">Heure</string>
+    <string name="hours_paid">Heures payées</string>
+    <string name="regular_overtime_hours">Heures supplémentaires travaillées</string>
+    <string name="overtime_hours">Heures supplémentaires</string>
+    <string name="overtime_multiplier">Multiplicateur d\'heures supplémentaires</string>
+
+    <string name="comments">Commentaires</string>
+    <string name="position">Poste</string>
+    <string name="location">Affectation</string>
+
+    <string name="leave_request">Demande d\'absence</string>
+    <string name="manager_comment">Notes pour l\'employé:</string>
+    <string name="employee_comment">Commentaire:</string>
+
+    <string name="hour_format">%s hrs</string>
+    <string name="overtime_format">%s hsupp</string>
+
+    <string name="delete">Supprimer</string>
+    <string name="submit">Soumettre</string>
+    <string name="save">Enregistrer</string>
+    <string name="cancel">Annuler</string>
+    <string name="sign_up">Inscriptions</string>
+    <string name="remove_signup">Desinscription</string>
+    <string name="signup_shift_header">Se porter volontaire pour un quart</string>
+    <string name="retry">Re-éssayer</string>
+    <string name="unknown_error">Erreur inconnue</string>
+    <string name="request_leave">Soumettre une demande d\'absence</string>
+
+    <string name="start_date">Date de début</string>
+    <string name="end_date">Date de fin</string>
+    <string name="type">Type d\'absence</string>
+    <string name="comment">Commentaire</string>
+    <string name="required">Requis</string>
+    <string name="full_name">%1$s %2$s</string>
+
+    <string name="sign_out">Se déconnecter</string>
+    <string name="leave_feedback">Donnez-nous votre avis</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="terms_of_use">Conditions d\'utilisation</string>
+    <string name="third_party_libraries">Bibliothèques tierces</string>
+
+    <string name="request_cancellation">Annuler</string>
+    <string name="request_delete_success">Votre demande d\'absence a ete supprimée.</string>
+
+    <string name="error_calendar_summary">Erreur de chargement du sommaire.</string>
+
+    <string name="leave_request_status_pending">En attente</string>
+    <string name="leave_request_status_accepted">Approuvé(e)</string>
+    <string name="leave_request_status_accepted_pending_edit">Demande de modification en attente</string>
+    <string name="leave_request_status_accepted_cancellation_requested">Annulation demandée</string>
+    <string name="leave_request_status_declined">Refusé(e)</string>
+    <string name="leave_request_status_revoked">Révoqué(e)</string>
+    <string name="leave_request_status_cancelled">Annulé(e)</string>
+
+    <string name="leave_request_submitted">Votre demande d\'absence a été soumise.</string>
+    <string name="leave_request_error">Impossible de soumettre la demande d\'absence.</string>
+    <string name="mobile_access_disabled_title">Accès mobile desactivé</string>
+    <string name="mobile_access_disabled">Accès mobile non autorisé pour votre organisation.</string>
+    <string name="select_leave_type">Sélectionner le type d\'absence</string>
+    <string name="select">Sélectionner</string>
+    <string name="next">Suivant</string>
+
+    <string name="leave_updates_channel">Mise a jour de demande d\'absence</string>
+    <string name="leave_updates_channel_description">Recevoir des notifications lorsque une demande d\'absence est modifiée.</string>
+
+    <string name="schedule_updates_channel">Mise a jour de l\'horaire.</string>
+    <string name="schedule_updates_channel_description">Recevoir des notifications lorsque l\'horaire est publié.</string>
+
+    <string name="shift_updates_channel">Mise a jour de quarts</string>
+    <string name="shift_updates_channel_description">Recevoir des notifications lorsque vos quarts de travail sont modifiés,</string>
+
+    <string name="due_timestamp">Date limite: %s</string>
+    <string name="submitted_timestamp">Soumis: %s</string>
+    <string name="projected_title">%s (Prévu)</string>
+
+    <string name="signup_count">Inscription (%s)</string>
+
+    <string name="signup_saved">Votre inscription a été enregistrée pour le(s) %s.</string>
+
+    <string name="leave_request_notification_title">Demande d\'absence</string>
+    <string name="schedule_notification_title">Horaire</string>
+
+
+    <string name="notification_date_range_join">au</string>
+    <string name="notification_date_list_join_final">et</string>
+    <string name="notification_date_list_join">,</string>
+
+    <string name="notification_leave_canceled_true">approuvé(e)</string>
+    <string name="notification_leave_canceled_false">refusé(e)</string>
+
+    <string name="notification_leave_amendment_true">apprové(e)</string>
+    <string name="notification_leave_amendment_false">refusé(e)</string>
+
+    <string name="leave_request_status_updated">Votre demande d\'absence %1$s pour le %2$s a été %3$s par %4$s.</string>
+
+    <string name="leave_status_map_accepted">approuvé(e)</string>
+    <string name="leave_status_map_declined">refusé(e)</string>
+    <string name="leave_status_map_revoked_after_approval">révoqué(e)</string>
+    <string name="leave_status_map_cancelled_after_approval">annulé(e)</string>
+
+    <string name="leave_status_map_pending">Statut mis à jour : en attente</string>
+    <string name="leave_status_map_accepted_pending_edit">Statut mis à jour : en attente de validation</string>
+    <string name="leave_status_map_accepted_cancellation_requested">Statut mis à jour : demande d\'annulation</string>
+
+
+    <string name="example_message_body">Ceci est un test: %1$s %2$s %3$s</string>
+    <string name="leave_request_cancellation_request_status_updated">Votre demande d\'annulation de demande d\'absence %1$s pour le %2$s a été %3$s par %4$s.</string>
+    <string name="leave_request_amendment_request_status_updated">Votre demande de mise à jour de demande d\'absence %1$s pour le %2$s a été %3$s par %4$s.</string>
+    <string name="leave_request_details_updated">Votre demande d\'absence %1$s pour le %2$s a été mise à jour par %3$s.</string>
+    <string name="schedule_published">Un nouvel horaire a été publié pour le %1$s.</string>
+    <string name="shift_edited">Votre horaire le %1$s a été mis à jour par %2$s.</string>
+    <string name="shift_assigned_or_unassigned_no_shift_id">Votre horaire a été mis à jour le %1$s par %2$s.</string>
+    <string name="shift_assigned">Le quart de travail %1$s vous a été assigné pour le %2$s par %3$s.</string>
+    <string name="shift_unassigned">Votre quart de travail le %1$s vous a été retiré par %2$s.</string>
+    <string name="bulk_shifts_edited">Votre horaire a été mis à jour par %1$s pour les dates suivantes: %2$s.</string>
+    <string name="bulk_shifts_assigned_or_unassigned">Votre horaire a été mis à jour par %1$s pour les dates suivantes: %2$s.</string>
+    <string name="new_message">Nouveau message</string>
+    <string name="new_message_description">Vous avez un nouveau message</string>
+    <string name="open_shift">Quarts de travail disponible</string>
+    <string name="open_shift_published">De nouvelles équipes ont été publiées dans le système d\'enchères par %1$s le %2$s.</string>
+    <string name="open_shift_request_status_updated">Votre enchère sur l\'équipe ouverte pour %1$s/%2$s a été de %3$s sur %4$s</string>
+    <string name="open_shift_success_message">Votre application pour le quart disponible a ètè soumise </string>
+    <string name="open_shift_request_failure">Votre application pour le quart disponible a rencontre une erreur </string>
+    <string name="open_shift_cancel_success">Votre application pour le quart disponible a ètè annulè </string>
+    <string name="pending">En attente</string>
+    <string name="take">Prendre</string>
+    <string name="bid">Offre</string>
+    <string name="rejected">Rejected</string>
+    <string name="bidders">%d Soumissionnaire(s)</string>
+    <string name="turndown">Refuser</string>
+    <string name="cancel_turndown">Annuler le Refuse</string>
+    <string name="turndown_no_takers_body">aucun employé admissible ne pourrait être affecté à votre quart de travail affiché, %1$s, %2$s on %3$s vous est toujours attribué.</string>
+    <string name="turndown_reassigned_body">Votre quart de travail %1$s, %2$s on %3$s a été réaffecté avec succès.</string>
+    <string name="trades">Trades</string>
+    <string name="trade_submitted">Trade Submitted</string>
+    <string name="trade_cancelled">Trade Cancelled</string>
+    <string name="trade_accepted">Trade Accepted</string>
+    <string name="trade_declined">Trade Declined</string>
+    <string name="violations_detected">Violations Detected</string>
+    <string name="critical_violations">Critical Violations</string>
+
+
+    <string name="submit_anyways">Soumettre quand même</string>
+
+    <string name="trade_requested_body">=%1$s veut échanger votre quart de travail du %2$s contre son quart de travail du %3$s</string>
+    <string name="trade_request_updated_body">Votre échange sur %1$s, avec %2$s est maintenant %3$s.</string>
+    <string name="submit_turndown_cancel_string">SoumettreRefuserAnnuler</string>
+    <string name="submit_turndown_request_string">Soumettre une demande de refus</string>
+    <string name="submit_trade_request_string">Soumettre une demande d\'échange</string>
+
+
+
+</resources>

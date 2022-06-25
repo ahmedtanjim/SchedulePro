@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/gray_50" />
+
+    <item
+        android:width="300dp"
+        android:height="150dp"
+        android:drawable="@drawable/ic_logosbsp"
+        android:top="100dp"
+        android:end="42dp"
+        android:gravity="top|center_horizontal"
+        android:start="42dp">
+
+    </item>
+
+    <item android:gravity="bottom"
+        android:width="500dp"
+        android:height="500dp"
+        android:drawable="@drawable/ic_shiftylogo" />
+</layer-list>

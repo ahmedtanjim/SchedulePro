@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option java_package = "com.shiftboard.schedulepro.core.proto";
+option java_multiple_files = true;
+
+message UserPreference {
+  string id = 1;
+  string employeeNumber = 2;
+
+  string firstName = 3;
+  string lastName = 4;
+
+  string teamId = 5;
+  string groupId = 6;
+
+  string phone = 7;
+  string email = 8;
+
+  string address = 9;
+  string city = 10;
+  string state = 11;
+
+  string secondaryPhone = 12;
+  string secondaryEmail = 13;
+
+  string emergencyContactName = 14;
+  string emergencyContactPhone = 15;
+
+  string cachedAt = 16;
+}

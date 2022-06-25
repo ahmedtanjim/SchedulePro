@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="formIcon" format="reference" />
+    <attr name="formIconStyle" format="reference" />
+
+    <attr name="formTitle" format="string" />
+    <attr name="formHelpText" format="string" />
+    <attr name="formErrorText" format="string" />
+    <attr name="formIconEnabled" format="boolean" />
+
+    <attr name="formFirstOption" format="string" />
+    <attr name="formSecondOption" format="string" />
+
+    <declare-styleable name="FormEditText">
+        <attr name="formIcon" />
+        <attr name="formIconEnabled" />
+        <attr name="formTitle" />
+        <attr name="android:inputType"/>
+        <attr name="formHelpText" />
+        <attr name="formErrorText" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FormPicker">
+        <attr name="formIcon" />
+        <attr name="formIconEnabled" />
+
+        <attr name="formTitle" />
+    </declare-styleable>
+
+    <declare-styleable name="FormMultiselectPicker">
+        <attr name="formTitle" />
+    </declare-styleable>
+
+    <declare-styleable name="TwoLineItem">
+        <attr name="android:title" />
+        <attr name="android:text" />
+    </declare-styleable>
+
+    <declare-styleable name="SingleLineItemWidget">
+        <attr name="android:icon" />
+        <attr name="android:text" />
+    </declare-styleable>
+
+    <declare-styleable name="TextAreaLineItemWidget">
+        <attr name="android:icon" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarBehavior">
+        <attr name="sft_behavior_anchoredView" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DetailsHeader">
+        <attr name="sft_draw_border" format="boolean" />
+        <attr name="sft_background_color" format="color" />
+        <attr name="sft_light_text" format="boolean" />
+    </declare-styleable>
+
+</resources>

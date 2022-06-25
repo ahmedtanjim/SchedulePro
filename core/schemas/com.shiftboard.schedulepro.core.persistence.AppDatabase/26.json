@@ -1,0 +1,144 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 25,
+    "identityHash": "0fc6dc6e0169ab62e608e04ff53e2cc9",
+    "entities": [
+      {
+        "tableName": "OpenShiftElement",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`actions` TEXT NOT NULL, `date` TEXT NOT NULL, `shiftTimeId` TEXT NOT NULL, `startTime` TEXT NOT NULL, `endTime` TEXT NOT NULL, `shiftTimeCode` TEXT NOT NULL, `shiftTimeDescription` TEXT NOT NULL, `positionId` TEXT, `positionCode` TEXT, `positionDescription` TEXT, `locationId` TEXT, `locationCode` TEXT, `locationDescription` TEXT, `color` INTEGER NOT NULL, `startsOnPreviousDay` INTEGER NOT NULL, `startsOnNextDay` INTEGER NOT NULL, `endsOnPreviousDay` INTEGER NOT NULL, `endsOnNextDay` INTEGER NOT NULL, `regularOvertimeHours` REAL NOT NULL, `cachedAt` TEXT NOT NULL, PRIMARY KEY(`date`, `shiftTimeId`))",
+        "fields": [
+          {
+            "fieldPath": "actions",
+            "columnName": "actions",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftTimeId",
+            "columnName": "shiftTimeId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startTime",
+            "columnName": "startTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endTime",
+            "columnName": "endTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftTimeCode",
+            "columnName": "shiftTimeCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftTimeDescription",
+            "columnName": "shiftTimeDescription",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "positionId",
+            "columnName": "positionId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "positionCode",
+            "columnName": "positionCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "positionDescription",
+            "columnName": "positionDescription",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "locationId",
+            "columnName": "locationId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "locationCode",
+            "columnName": "locationCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "locationDescription",
+            "columnName": "locationDescription",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "color",
+            "columnName": "color",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startsOnPreviousDay",
+            "columnName": "startsOnPreviousDay",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startsOnNextDay",
+            "columnName": "startsOnNextDay",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endsOnPreviousDay",
+            "columnName": "endsOnPreviousDay",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endsOnNextDay",
+            "columnName": "endsOnNextDay",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "regularOvertimeHours",
+            "columnName": "regularOvertimeHours",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cachedAt",
+            "columnName": "cachedAt",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "date",
+            "shiftTimeId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/half_margin"
+    android:layout_marginBottom="@dimen/half_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_feedback"
+        android:contentDescription="@null"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:layout_marginTop="@dimen/half_margin"
+        android:layout_marginBottom="@dimen/half_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/text_dark" />
+
+    <TextView
+        android:id="@+id/manager_comment_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_light"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintBottom_toTopOf="@+id/manager_comment"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Text.Regular14"
+        android:text="@string/manager_comment" />
+
+    <TextView
+        android:id="@+id/manager_comment"
+        style="@style/Text.Regular18"
+        android:textColor="@color/text_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:text="Notes about boats"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        app:layout_constraintTop_toBottomOf="@+id/manager_comment_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/employee_comment_header"
+        app:layout_constraintStart_toEndOf="@+id/icon" />
+
+    <TextView
+        android:id="@+id/employee_comment_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_light"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/half_margin"
+        android:layout_marginEnd="@dimen/standard_margin"
+        app:layout_constraintTop_toBottomOf="@+id/manager_comment"
+        android:layout_marginStart="@dimen/standard_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintBottom_toTopOf="@+id/employee_comment"
+        style="@style/Text.Regular14"
+        android:text="@string/employee_comment" />
+
+    <TextView
+        android:id="@+id/employee_comment"
+        style="@style/Text.Regular18"
+        android:textColor="@color/text_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="Notes about boats"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        app:layout_constraintTop_toBottomOf="@+id/employee_comment_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

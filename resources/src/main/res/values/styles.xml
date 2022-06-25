@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NegativeThemeOverlay" parent="ThemeOverlay.MaterialComponents">
+        <item name="colorPrimary">@color/alert_red</item>
+    </style>
+
+    <style name="NegativeButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="theme">@style/NegativeThemeOverlay</item>
+    </style>
+
+    <style name="CalenderViewCustom" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/text_dark</item>
+        <item name="colorSurface">@color/text_dark</item>
+    </style>
+
+</resources>

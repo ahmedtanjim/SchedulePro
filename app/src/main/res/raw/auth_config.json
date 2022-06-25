@@ -1,0 +1,6 @@
+{
+  "client_id": "7dc40a0b-d956-48ed-87f4-6430945aad78",
+  "redirect_uri": "com.shiftboard.schedulepro:/oauth/redirect",
+  "authorization_scope": "https://ScheduleProDevB2CTenant.onmicrosoft.com/api/demo.read",
+  "discovery_uri": "https://scheduleprodevb2ctenant.b2clogin.com/ScheduleProDevB2CTenant.onmicrosoft.com/B2C_1_signin2/v2.0/.well-known/openid-configuration"
+}

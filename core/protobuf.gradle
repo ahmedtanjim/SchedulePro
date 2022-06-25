@@ -1,0 +1,16 @@
+// Protobuf's kotlin dsl got broken in the Gradle 6.8 update.  This is a work around for that
+
+protobuf {
+    protoc {
+        artifact = Libs.PROTOC
+    }
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                java {
+                    option "lite"
+                }
+            }
+        }
+    }
+}
